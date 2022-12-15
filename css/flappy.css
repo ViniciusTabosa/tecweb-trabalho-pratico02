@@ -83,3 +83,11 @@ body {
     font-size: 70px;
     z-index: 100;
 }
+
+#form{
+    color: #000;
+    background-color: rgb(241, 241, 241);
+    border: 1px 1px 1px black;
+    width: 500px;
+    height: 500px;
+}
