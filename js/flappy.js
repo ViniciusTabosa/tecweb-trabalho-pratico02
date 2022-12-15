@@ -14,11 +14,10 @@ function Barreira(reversa = false) {
     this.setAltura = altura => corpo.style.height = `${altura}px`
 
 }
-/* 
-const b= new Barreira(false)
-b.setAltura(300)
-document.querySelector('[wm-flappy]').appendChild(b.elemento) 
- */
+
+// const b= new Barreira(false)
+// b.setAltura(300)
+// document.querySelector('[wm-flappy]').appendChild(b.elemento)
 
 
 function ParDeBarreiras(altura, abertura, popsicaoNaTela) {
@@ -44,9 +43,9 @@ function ParDeBarreiras(altura, abertura, popsicaoNaTela) {
     this.setX(popsicaoNaTela)
  } 
 
- /* const b= new ParDeBarreiras(550,250,500)
-document.querySelector('[wm-flappy]').appendChild(b.elemento)  
- */
+// const b= new ParDeBarreiras(550,250,500)
+// document.querySelector('[wm-flappy]').appendChild(b.elemento)
+
 function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
     this.pares = [
         new ParDeBarreiras(altura, abertura, largura),
@@ -111,18 +110,18 @@ function Passaro(alturaJogo) {
     this.setY(alturaJogo / 2)
 }
 
-/* const barreiras = new Barreiras(700, 400, 200, 400)
-const passaro = new Passaro(700)
+// const barreiras = new Barreiras(700, 400, 200, 400)
+// const passaro = new Passaro(700)
 
-const areaDoJogo = document.querySelector('[wm-flappy]')
+// const areaDoJogo = document.querySelector('[wm-flappy]')
 
-areaDoJogo.appendChild(passaro.elemento)
-barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento)) 
+// areaDoJogo.appendChild(passaro.elemento)
+// barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento)) 
 
-setInterval(() => {
-      barreiras.animar()
-      passaro.animar() 
-},20) */
+// setInterval(() => {
+//       barreiras.animar()
+//       passaro.animar() 
+// },20)
 
 
  function Progresso() {
@@ -134,13 +133,13 @@ setInterval(() => {
     this.atualizarPontos(0)
 }
 
-/*  const barreiras = new Barreiras(700, 400, 200, 400)
-const passaro = new Passaro(700)
+// const barreiras = new Barreiras(700, 400, 200, 400)
+// const passaro = new Passaro(700)
 
-const areaDoJogo = document.querySelector('[wm-flappy]')
+// const areaDoJogo = document.querySelector('[wm-flappy]')
 
-areaDoJogo.appendChild(passaro.elemento)
-barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento))  */
+// areaDoJogo.appendChild(passaro.elemento)
+// barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento))
 
 
  function estaoSobrepostos(elementoA, elementoB) {
@@ -195,4 +194,4 @@ function colidiu(passaro, barreiras) {
         }, 20)
     }
 }
-/*  new FlappyBird().start() */ 
+// new FlappyBird().start()
